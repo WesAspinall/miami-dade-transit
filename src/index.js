@@ -13,7 +13,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://miami-transit-api.herokuapp.com/api/TrainStations.json')
+        fetch('https://miami-transit-api.herokuapp.com/api/TrainStations.json')
             .then((res) => res.json())
             .then((data) => this.setState({ stations: data.RecordSet.Record }));
     }
