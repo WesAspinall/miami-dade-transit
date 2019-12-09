@@ -1,4 +1,6 @@
 import React from 'react';
+import LineColor from './LineColor';
+
 
 const ArrivalTimes = (props) => {
 
@@ -15,9 +17,12 @@ const ArrivalTimes = (props) => {
     return (
         <div>
             <div>{props.direction}</div>
-            <span>Train 1: {props.station.NB_Time1_Arrival} {formatter(props.station.NB_Time1)} </span> | 
-            <span>Train 2: {props.station.NB_Time2_Arrival} {formatter(props.station.NB_Time2)}</span>  | 
-            <span>Train 3: {props.station.NB_Time3_Arrival} {formatter(props.station.NB_Time3)}</span>
+          
+           <ul>
+               <li><LineColor lineId={props.station.NB_Time1_LineID}/>Train 1: {props.station.NB_Time1_Arrival} {formatter(props.station.NB_Time1)}</li>
+               <li><LineColor lineId={props.station.NB_Time2_LineID}/>Train 2: {props.station.NB_Time2_Arrival} {formatter(props.station.NB_Time2)}</li>
+               <li><LineColor lineId={props.station.NB_Time3_LineID}/>Train 3: {props.station.NB_Time3_Arrival} {formatter(props.station.NB_Time3)}</li>
+           </ul>
         </div>
        
     )

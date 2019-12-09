@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.train-tracker {
+  padding-left: 1em;
+}

@@ -26,7 +26,7 @@ class App extends React.Component {
                 <div className="station-list">
                     {this.state.stations.length === 0 ? 'Loading...' : this.state.stations.map((station, index) => {
                         return (
-                            <div className="train-trackers">
+                            <div className="train-tracker">
                                 <h4 style={{marginBottom:'5px'}}>{station.StationName}</h4>
                                 <ArrivalTimes direction={'Northbound'} station={station}/>
                                 <ArrivalTimes direction={'Southbound'} station={station}/>
