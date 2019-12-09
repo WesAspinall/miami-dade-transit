@@ -1,5 +1,4 @@
 import React from 'react';
-import { setAutoFreeze } from 'immer';
 
 const LineColor = (props) => {
 
@@ -11,7 +10,6 @@ const LineColor = (props) => {
         }
     }
    
-
     let style = {
         backgroundColor: color(props),
         width: 8,
