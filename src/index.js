@@ -23,6 +23,7 @@ class App extends React.Component {
         return (
             <div className="app">
                 <h1>Metro Rail Stations</h1>
+                <p>For more information about current maintenance schedules and planned service outages, <a href='https://www.miamidade.gov/transportation-publicworks/rail_schedules.asp'>click here</a>.</p>
                 <div className="station-list">
                     {this.state.stations.length === 0 ? 'Loading...' : this.state.stations.map((station, index) => {
                         return (
