@@ -29,8 +29,7 @@ class App extends React.Component {
                         return (
                             <div className="train-tracker" key={Math.random() * 100}>
                                 <h4 style={{marginBottom:'5px'}}>{station.StationName}</h4>
-                                <ArrivalTimes direction={'Northbound'} station={station}/>
-                                <ArrivalTimes direction={'Southbound'} station={station}/>
+                                <ArrivalTimes station={station}/>
                             </div>
                         )
                     })}
